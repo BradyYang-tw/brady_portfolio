@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+    portfolio:
+        build:
+            context: ./brady_portfolio
+            dockerfile: dockerfile
+        ports:
+            - "80:80"
+        container_name: brady-portfolio
+        restart: always
+    cloudflared:
+        image: cloudflare/cloudflared:latest
+        command: tunnel run
+        environment:
+          - TUNNEL_TOKEN=eyJhIjoiNTQ3MmU0ODZkMTM1NjA4MWQwNTExYjhlNmJhMjgyYTgiLCJ0IjoiZTJiMDc3N2YtZDhjZS00NzE3LTk1MjUtODhiMWE3YWVlYjIwIiwicyI6Ik5qUmxNbVZtWlRVdFl6WXpOQzAwTVdVMUxUbGpZall0TjJGaFltSTFZbU0wWmpJeCJ9
