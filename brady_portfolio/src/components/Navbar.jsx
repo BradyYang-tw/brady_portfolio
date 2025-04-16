@@ -13,9 +13,9 @@ const Navbar = () => {
         </div>
         <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
             <FaLinkedin/>
-            <FaGithub></FaGithub>
-            <FaSquareXTwitter></FaSquareXTwitter>
-            <FaInstagram></FaInstagram>
+            <FaGithub/>
+            <FaSquareXTwitter/>
+            <FaInstagram/>
         </div>
     </nav>
   )
