@@ -1,1 +1,1 @@
-Fronted: Portfolio
+Fronted: brady_portfolio
