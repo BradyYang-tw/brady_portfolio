@@ -4,7 +4,8 @@ import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import About from "./components/About.jsx";
 import Technologies from "./components/Technologies.jsx";
-
+import Experience from "./components/Experience.jsx";
+import Projects from "./components/Projects.jsx";
 function App() {
   return (
     <div className="text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
@@ -16,6 +17,8 @@ function App() {
         <Hero></Hero>
         <About></About>
         <Technologies></Technologies>
+        <Experience></Experience>
+        <Projects></Projects>
       </div>
     </div>
   );
