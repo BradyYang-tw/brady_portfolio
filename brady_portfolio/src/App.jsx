@@ -20,6 +20,11 @@ function App() {
         <Experience></Experience>
         <Projects></Projects>
       </div>
+      <footer className="flex items-center justify-center">
+        <p className="text-sm text-neutral-500">
+          BRADY INC. © COPYRIGHT 2025. ALL RIGHTS RESERVED.
+        </p>
+      </footer>
     </div>
   );
 }

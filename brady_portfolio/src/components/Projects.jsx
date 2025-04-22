@@ -1,11 +1,13 @@
-import logo from '../assets/react.svg'
+import brady_movie from "../assets/brady_movie.png";
 const Projects = () => {
   const projects = [
     {
-      image: logo,
-      title: "Portfolio",
+      image: brady_movie,
+      title: "Brady Movie ",
+      url: "https://bradyyang-tw.github.io/react-search-movie/",
       description:
-        "This is my portfolio website, where I showcase my projects and skills. It is built with React and Tailwind CSS.",
+        "This is movie search website, using React and the Movie Database API. It allows users to search for movies and view their details.",
+      technologies: ["React", "JavaScript", "HTML", "CSS"],
     },
   ];
   return (
@@ -15,12 +17,28 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <div className="w-full lg:w-1/4">
-              <img className='mb-6 rounded' src={project.image} width={150} height={150} alt={project.title} />
+              <a href={project.url} target="_blank">
+                <img
+                  className="mb-6 rounded"
+                  src={project.image}
+                  width={150}
+                  height={150}
+                  alt={project.title}
+                />
+              </a>
             </div>
             <div className="w-full lg:w-3/4">
-                    <h6 className="mb-2 font-semibold">{project.title}</h6>
-                    <p className="mb-4 text-neutral-400">{project.description}</p>
-                </div>
+              <h6 className="mb-2 font-semibold"><a href={project.url} target="_blank">{project.title}</a></h6>
+              <p className="mb-4 text-neutral-400">{project.description}</p>
+              {project.technologies.map((tech, index) => (
+                <span
+                  className="mr-2 rounded border-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"
+                  key={index}
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
         ))}
       </div>
