@@ -1,4 +1,5 @@
 import brady_movie from "../assets/brady_movie.png";
+import tic_tac_toe from "../assets/game-logo.png"
 const Projects = () => {
   const projects = [
     {
@@ -8,6 +9,13 @@ const Projects = () => {
       description:
         "This is movie search website, using React and the Movie Database API. It allows users to search for movies and view their details.",
       technologies: ["React", "JavaScript", "HTML", "CSS"],
+    },
+    {
+      image: tic_tac_toe,
+      title: "Tic Tac Toe ",
+      url: "https://bradyyang-tw.github.io/tic-tac-toe/",
+      description:" This is the little game TIC TAC TOE",
+        technologies: ["React", "JavaScript", "HTML", "CSS"],
     },
   ];
   return (
